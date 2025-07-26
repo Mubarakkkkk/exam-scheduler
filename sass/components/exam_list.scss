@@ -1,0 +1,123 @@
+@use '../abstracts/variables.scss' as *;
+
+.exam-list {
+    
+    &__heading {
+        color: $black-fade-big-color;
+    }
+
+    &__wrapper {
+
+    }
+
+    &__table {
+        width: 100%;
+        border: 1px solid $border-color;
+        box-shadow: $box-shadow;
+        border-radius: 1rem;
+    }
+
+    &__header {
+        font-size: 1.1rem;
+        border-bottom: 1px solid #eee;
+        color: $black-fade-small-color;
+        background-color: $light-color;
+        text-transform: uppercase;
+        padding: 1rem 1.5rem;
+
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 2fr 1fr 1fr;
+        align-items: center;
+    }
+
+    &__head {
+        text-align: left;
+    }
+
+    &__body {
+       
+
+       
+    }
+
+    &__tr {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 2fr 1fr 1fr;
+        align-items: center;
+
+        padding: 2rem 1.5rem;
+        border-bottom: 1px solid #eee;
+
+        &:hover {
+            background-color: $light-color;
+        }
+
+    }
+
+    &__data {
+        text-align: left;
+
+        &:not(:first-child) {
+            margin-left: .5rem;
+        }
+     
+
+        &--btns {
+            display: flex;
+            align-items: center;
+            gap: .7rem;
+        }
+    }
+
+    &__strong {
+        color: $black-fade-big-color;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        //font-weight: 500;
+    }
+
+    &__span {
+        display: inline-block;
+        color: $black-fade-small-color;
+        margin: .4rem .4rem 0 0;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    &__btn {
+        border-radius: 1rem;
+        border: 0;
+        background-color: transparent;
+        padding: .2rem .4rem;
+        cursor: pointer;
+        color: $white-color;
+        font-size: 1.2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: .2rem;
+
+        &--edit {
+            color: $primary-color-fade-blue;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+        &--delete {
+                color: $secondary-color-red-fade-small;
+
+            &:hover {
+                color: $secondary-color-red-fade-big;
+            }
+        }
+    }
+
+    &__span-icon {
+        flex: 0 0 .1rem;
+
+    }
+
+}

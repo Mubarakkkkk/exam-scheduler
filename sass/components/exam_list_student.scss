@@ -1,0 +1,75 @@
+@use '../abstracts/variables.scss' as *;
+
+.student-exam-list {
+    
+    &__heading {
+        color: $black-fade-big-color;
+    }
+
+    &__wrapper {
+
+    }
+
+    &__table {
+        width: 100%;
+        border: 1px solid $border-color;
+        box-shadow: $box-shadow;
+        border-radius: 1rem;
+    }
+
+    &__header {
+        font-size: 1.1rem;
+        border-bottom: 1px solid #eee;
+        color: $black-fade-small-color;
+        background-color: $light-color;
+        text-transform: uppercase;
+
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 2fr 1fr;
+        padding: 15px;
+        align-items: center;
+    }
+
+    &__body {
+       
+
+       
+    }
+
+    &__tr {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 2fr 1fr;
+        align-items: center;
+
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+
+        &:hover {
+            background-color: $light-color;
+        }
+    }
+
+    &__data {
+
+        &--btns {
+            display: flex;
+            align-items: center;
+            gap: .7rem;
+        }
+    }
+
+    &__strong {
+        color: $black-fade-big-color;
+        font-size: 1.1rem;
+        text-transform: capitalize;
+    }
+
+    &__span {
+        display: inline-block;
+        color: $black-fade-small-color;
+        margin: .4rem .4rem 0 0;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+
+}

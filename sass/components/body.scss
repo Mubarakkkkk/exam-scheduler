@@ -1,0 +1,134 @@
+@use '../abstracts/variables.scss' as *;
+
+
+.body {
+    padding: 3rem;
+    padding-top: 7rem;
+    
+    background-color: $light-color;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+
+
+    &__sidebar {
+        border: 1px solid $border-color;
+        border-radius: 1rem;
+        box-shadow: $box-shadow;
+        background-color: $white-color;
+        padding: 2rem 1rem;
+
+        flex: 1 1 15rem;
+        align-self: flex-start;
+    }
+
+    &__nav {
+        border: 1px solid $border-color;
+        box-shadow: $box-shadow;
+        border-radius: 1rem;
+        padding: 2rem 1rem;
+        width: 100%;
+    }
+
+    &__nav-title {
+        color: $black-fade-big-color;
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+    }
+
+    &__link-box {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        border-radius: 1rem;
+        padding: 1.5rem 1.5rem;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+    }
+
+    &__nav-icon {
+        color: $black-fade-small-color;
+    }
+
+    &__link {
+        display: inline-block;
+        color: $black-fade-small-color;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    &__link-box:hover {
+        background-color: $light-color;
+        transition: background-color .4s ease-out;
+    }
+
+    &__link-box:hover &__nav-icon, &__link {
+        color: $black-fade-big-color;
+    }
+
+    &__statistics {
+        margin-top: 3.5rem;
+        border: 1px solid $border-color;
+        box-shadow: $box-shadow;
+        border-radius: 1rem;
+        padding: 2rem 1rem;
+
+    }
+
+    &__stat {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 1.5rem 1.5rem;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        &:nth-child(2) {
+            background-color: rgba($primary-color-fade-text-blue, .5);
+            color: $primary-color-fade-blue;
+        }
+
+        &:nth-child(3) {
+            background-color: rgba($primary-color-fade-text-green, .5);
+            color: $primary-color-text-green;
+        }
+
+        &:nth-child(4) {
+            background-color: rgba($primary-color-fade-text-purple, .5);
+            color: $primary-color-text-purple;
+        }
+    
+    }
+
+    &__text {
+        display: inline-block;
+    }
+
+    &__num {
+        display: inline-block;
+    }
+
+    &__content {
+        border: 1px solid $border-color;
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        box-shadow: $box-shadow;
+        background-color: $white-color;
+
+        flex: 1 1 85rem;
+        align-self: flex-start;
+    }
+}
+

@@ -1,0 +1,69 @@
+@use '../abstracts/variables.scss' as *;
+
+.dashboard {
+
+    &__heading {
+        color: $black-fade-big-color;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    &__box {
+        border: 1px solid $border-color;
+        box-shadow: $box-shadow;
+        border-radius: 1rem;
+        padding: 1.3rem 2.5rem;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__icon {
+        width: 4rem; height: 5.5rem;
+        border-radius: 5rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--calendar {
+            background-color: rgba($primary-color-fade-text-purple, .5);
+            color: $primary-color-text-purple;
+        }
+
+        &--timer {
+            background-color: rgba($primary-color-fade-text-blue, .5);
+            color: $primary-color-fade-blue;
+        }
+
+        &--square {
+            background-color: rgba($primary-color-fade-text-green, .5);
+            color: $primary-color-text-green;
+        }
+
+    }
+
+    &__content {
+
+    }
+
+    &__text {
+        display: block;
+        font-size: 1.5rem;
+        color: $black-fade-small-color;
+    }   
+
+    &__num {
+        display: inline-block;
+        margin-top: .5rem;
+        font-size: 1.7rem;
+        color: $black-fade-big-color;
+       
+    }
+}

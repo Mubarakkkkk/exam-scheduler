@@ -1,0 +1,71 @@
+@use '../abstracts/variables.scss' as *;
+
+.calendar-view-modal {
+    position: fixed;
+    padding: 1rem;
+    padding-top: 5rem;
+    top: 0; right: 0; left: 0;
+    height: 100vh;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__form {
+        box-shadow: 0 0 0px 100rem rgba(#000000,  .8);
+        background-color: $white-color;
+        border-radius: 1rem;
+        padding: 2rem 2.5rem;
+    }
+
+    &__head-title {
+        margin-bottom: 3rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+     &__icon-cancel {
+        display: inline-block;
+        cursor: pointer;
+        color: $black-fade-small-color;
+        width: 3rem; height: 3rem;
+        border-radius: .3rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &:hover {
+            background-color: $primary-color-fade-text-blue;
+            color: $black-fade-big-color;
+        }
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        color: $black-fade-big-color;
+    }
+
+    &__group {
+        
+
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__label {
+        font-size: 1.6rem;
+        color: $black-fade-small-color;
+        margin-right: 1rem;
+    }
+
+    &__value {
+        font-size: 1.5rem;
+        color: $black-fade-big-color;
+    }
+
+}

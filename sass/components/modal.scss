@@ -1,0 +1,177 @@
+@use '../abstracts/variables.scss' as *;
+
+
+.modal {
+    position: fixed;
+    padding: 1rem;
+    padding-top: 5rem;
+    top: 0; right: 0; left: 0;
+    height: 100vh;
+    z-index: 1;
+    overflow: auto;
+    visibility: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.active {
+        visibility: visible;
+    }
+
+    &::-webkit-scrollbar {
+        width: .3rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: $light-color;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    &__form {
+        box-shadow: 0 0 0px 100rem rgba(#000000,  .8);
+        background-color: $white-color;
+        border-radius: 1rem;
+        padding: 2rem 2.5rem;
+    }
+
+    &__heading {
+        margin-bottom: 3rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__icon-cancel {
+        display: inline-block;
+        cursor: pointer;
+        color: $black-fade-small-color;
+        width: 4rem; height: 4rem;
+        border-radius: .3rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &:hover {
+            background-color: $primary-color-fade-text-blue;
+            color: $black-fade-big-color;
+        }
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        color: $black-fade-big-color;
+        
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    &__group {
+        margin-bottom: 1.2rem;
+
+        flex: 1 1 45rem;
+    }
+
+    &__label {
+        display: inline-block;
+        font-size: 1.4rem;
+        color: $black-fade-small-color;
+        margin-bottom: .7rem;
+    }
+
+    &__input {
+        width: 100%;
+        border-radius: .5rem;
+        border: 1px solid $border-color;
+        background-color: $white-color;
+        padding: 1rem 1.3rem;
+        color: $black-fade-big-color;
+        font-size: 1.6rem;
+        resize: none;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    &__op-placeholder {
+        color: $black-fade-small-color; 
+    }
+
+    &__btn-wrapper {
+
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+    }
+
+    &__btn-schedule {
+        border-radius: 1rem;
+        border: 0;
+        background-color: $primary-color-fade-blue;
+        color: $white-color;
+        cursor: pointer;
+        width: 100%;
+        padding: .8rem 1rem;
+        text-align: center;
+        font-size: 1.4rem;
+        width: 15rem;
+
+        display: flex;
+        align-items: center;
+        gap: .6rem;
+
+
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+
+    &__btn-cancel {
+        border-radius: 1rem;
+        border: 0;
+        background-color: $secondary-color-red-fade-small;
+        color: $white-color;
+        cursor: pointer;
+        width: 100%;
+        padding: 1rem 1rem;
+        text-align: center;
+        font-size: 1.6rem;
+        width: 15rem;
+
+
+        &:hover {
+            background-color: $secondary-color-red-fade-big;
+        }
+    }
+
+    &__btn-conflict {
+        border-radius: 1rem;
+        border: 1px solid $primary-color-fade-blue;
+        background-color: $white-color;
+        color: $primary-color-fade-blue;
+        cursor: pointer;
+        width: 100%;
+        padding: 1rem 1rem;
+        text-align: center;
+        font-size: 1.6rem;
+        width: 15rem;
+    }
+}
+

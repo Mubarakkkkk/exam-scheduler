@@ -1,0 +1,112 @@
+@use '../abstracts/variables.scss' as *;
+
+.header {
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    padding: 1rem 3rem;
+    border: 1px solid $border-color;
+    background-color: $white-color;
+    box-shadow: $box-shadow;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    &__name {
+        color: $primary-color;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .3rem;
+
+        background-color: $primary-color-fade-blue;
+        border-radius: 1rem;
+        border: 0;
+        color: $white-color;
+        cursor: pointer;
+        padding: .6rem 1rem;
+        font-size: 1.5rem;
+
+        &:hover {
+            background-color: $primary-color;
+            transition: background-color .4s ease-out;
+        }
+    }
+
+    &__plus-icon {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    &__noti {
+        position: relative;
+        width: 3rem; height: 3rem;
+        background-color: $light-color;
+        border-radius: .3rem;
+        cursor: pointer;
+        color: #413d3df6;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            color: $black-fade-big-color;
+        }
+    }
+
+    &__notify {
+        position: absolute;
+        display: inline-block;
+        width: 1.8rem; height: 1.8rem;
+        top: 0rem; left: 1.5rem;
+        border-radius: 1rem;
+        background-color: orangered;
+        color: $white-color;
+        font-size: 1.3rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__logout {
+       
+    }
+
+    &__arrow-icon {
+        display: inline-block;
+        color: $black-fade-small-color;
+        width: 3rem; height: 3rem;
+        border-radius: .3rem;
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: $primary-color;
+            color: $white-color;
+            transition: background-color .4s ease-out, color .1s ease-in;
+        }
+    }
+ 
+}

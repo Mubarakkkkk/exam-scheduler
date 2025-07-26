@@ -1,0 +1,74 @@
+@use '../abstracts/variables.scss' as *;
+
+.form {
+    background-color: $white-color;
+    border-radius: 1.5rem;
+    padding: 4rem 2.5rem;
+    
+    &__header {
+        
+    }
+
+    &__heading-primary {
+        color: $black-fade-big-color;
+    }
+
+    &__heading-secondary {
+        display: inline-block;
+        color: rgba( $black-fade-small-color, .8);
+    }
+
+
+    &__details {
+        
+    }
+    
+    &__group {
+        
+        &:not(:last-child) {
+            margin-bottom: 1.7rem;
+        }
+    }
+
+    &__label {
+        display: inline-block;
+        color:$black-fade-small-color;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__input {
+        width: 100%;
+        border-radius: .5rem;
+        border: 1px solid $border-color;
+        background-color: $white-color;
+        padding: 1rem 1.3rem;
+        color: $black-fade-big-color;
+        font-size: 1.6rem;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &:not(last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__submit {
+        border-radius: .5rem;
+        border: 0;
+        background-color: $primary-color-fade-blue;
+        color: $white-color;
+        cursor: pointer;
+        width: 100%;
+        padding: 1rem 1.3rem;
+        text-align: center;
+        font-size: 1.6rem;
+
+        &:hover {
+            background-color: $primary-color;
+            transition: background-color .3s ease-out;
+        }
+    }
+}

@@ -1,0 +1,184 @@
+@use '../abstracts/variables.scss' as *;
+
+.notification {
+    position: absolute;
+    top: 4.5rem; right: 7rem;
+    border-radius: .3rem;
+    box-shadow: $box-shadow;
+    background-color: $white-color;
+    padding: 2rem;
+
+    & > *:not(:first-child) {
+        padding: 2rem 1.5rem; 
+        border-bottom: 1px solid $border-color; 
+        border-radius: .3rem;
+        cursor: pointer; 
+        position: relative;
+    }
+
+    & > *:hover:not(:first-child) {
+        background-color: $light-color;
+        transition: background-color .4s ease-out;
+    }
+
+    & > *:hover &__text {
+        color: $black-fade-big-color;
+    }
+
+    & > *:hover &__number {
+        visibility: visible;
+    }
+
+    &__cancel {
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+        color: $black-fade-small-color;
+
+        display: flex;
+        justify-content: flex-end;
+
+        &:hover {
+            color: $black-fade-big-color;
+
+        }
+    }
+
+    &__items {
+       
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__number {
+        position: absolute;
+        display: inline-block;
+        width: 1.5rem; height: 1.5rem;
+        top: 0rem; right: 0rem;
+        border-radius: 1rem;
+        background-color: orangered;
+        color: $white-color;
+        font-size: 1.2rem;
+        visibility: hidden;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        color: $black-fade-small-color;
+        font-weight: 500;
+    }
+
+    &__icon {
+        display: inline-block;
+        color: $black-fade-big-color;
+       // margin-top: 2rem;
+    }
+
+    /// For another drop down part
+    &__surbodinate {
+        position: absolute;
+        //top: 20rem; right: 34rem;
+        border-radius: .3rem;
+        box-shadow: $box-shadow;
+        background-color: $white-color;
+        padding: 1rem;
+    }
+
+    &__wrapper {
+        padding: 1rem 1rem;
+        
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid $border-color;
+        }
+    }
+
+    &__detail:nth-child(1) {
+        font-size: 1.5rem;
+        color: $black-fade-big-color;
+        text-transform: capitalize;
+    }
+     
+    &__detail:nth-child(2), &__detail:nth-child(3) {
+        margin: .7rem 0;
+        display: inline-block;
+    }
+
+    &__detail:nth-child(3) {
+        text-transform: uppercase;
+    }
+
+    &__detail:nth-child(3) {
+        margin-right: 1rem;
+    }
+
+    &__detail:nth-child(4) {
+        display: inline-block;
+    }
+
+    &__detail {
+        font-size: 1.2rem;
+        color: $black-fade-small-color;
+    }
+
+    &__comp {
+        top: 10rem; right: 35rem;
+        animation: comp .3s ease-out;
+    }
+
+    &__swd {
+        top: 17rem; right: 35rem;
+        animation: swd .3s ease-out;
+    }
+
+    &__ait {
+        top: 23rem; right: 35rem;
+        animation: ait .3s ease-out;
+    }
+
+    &__ncc {
+        top: 30rem; right: 35rem;
+        animation: ncc .3s ease-out;
+    }
+
+    &__cys {
+        top: 37rem; right: 35rem;
+        animation: cys .3s ease-out;
+    }
+}
+
+@keyframes comp {
+    0% {
+        top: 10rem; right: 15rem;
+    }
+
+}
+
+@keyframes swd {
+    0% {
+        top: 17rem; right: 15rem;
+    }
+
+}
+
+@keyframes ait {
+    0% {
+        top: 23rem; right: 15rem;
+    }
+}
+
+@keyframes ncc {
+    0% {
+        top: 30rem; right: 15rem;
+    }
+}
+
+@keyframes cys {
+    0% {
+        top: 37rem; right: 15rem;
+    }
+}
