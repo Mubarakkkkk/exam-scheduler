@@ -497,6 +497,7 @@ html {
   background-color: #FFFFFF;
   border-radius: 1.5rem;
   padding: 4rem 2.5rem;
+  flex: 1 1 50%;
 }
 .form__heading-primary {
   color: rgba(20, 18, 18, 0.9647058824);
@@ -638,6 +639,49 @@ html {
   background-color: #1347b6;
   color: #FFFFFF;
   transition: background-color 0.4s ease-out, color 0.1s ease-in;
+}
+
+.introduction {
+  flex: 1 1 50%;
+  text-align: center;
+}
+.introduction > * {
+  text-transform: uppercase;
+  color: #e6dbdb;
+}
+.introduction__1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.introduction__2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.introduction__3 {
+  display: inline-block;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.introduction__4 {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.introduction__5 {
+  display: inline-block;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.introduction__6 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.introduction__7 {
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 .modal {
@@ -1080,8 +1124,9 @@ html {
 
 .login {
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 3rem;
+  padding: 3rem;
   height: 100vh;
   background: linear-gradient(120deg, #1347b6 60%, #cc4a78);
 }

@@ -9,12 +9,6 @@ export const Dashboard = () => {
   const [upcomingExams, setUpcomingExams] = useState(0);
   const [completedExams, setCompletedExams] = useState(0);
 
-  // Load data from localStorage on component mount
-  useEffect(() => {
-    const data = JSON.parse(localStorage.getItem('schedule_exam')) ?? [];
-    setScheduleExamDetails(data);
-  }, []);
-
   useEffect(() => {
     // Get current date at midnight for accurate comparison
     const today = new Date();
@@ -59,6 +53,11 @@ export const Dashboard = () => {
     setCompletedExams(countCompletedExam);
   })
 
+  // Load data from localStorage on component mount
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem('schedule_exam')) ?? [];
+    setScheduleExamDetails(data);
+  }, []);
 
   return (
     <div className = "dashboard">

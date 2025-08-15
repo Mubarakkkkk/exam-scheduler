@@ -28,6 +28,23 @@ export const LoginPage = () => {
 
   return (
     <main className = "login">
+        <div className = "introduction">
+            <div>
+                <h2 className = "introduction__1">design and implementaion of</h2>
+            </div>
+            <div>
+                <h1 className = "introduction__2">examination scheduling system using web technology</h1>
+            </div>
+            <div>
+                <span className = "introduction__3">a case study of </span>
+                <h4 className = "introduction__4">school of computing, federal polytechnic offa</h4>
+            </div>
+            <div>
+                <span className = "introduction__5">design by </span>
+                <h5 className = "introduction__6">uzohako favour</h5>
+                <h5 className = "introduction__7"> swd/hnd/f23/0419</h5>
+            </div>
+        </div>
         <form onSubmit = { handleSubmit } className = "form">
             <header className = "form__header text-center">
                 <h3 className = "form__heading-primary size-big">Exam Scheduling System</h3>

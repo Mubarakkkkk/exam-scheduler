@@ -1,0 +1,52 @@
+@use '../abstracts/variables.scss' as *;
+
+.introduction {
+    flex: 1 1 50%;
+
+
+    text-align: center;
+    
+
+    & > * {
+        text-transform: uppercase;
+        color: $light-color-3;
+       
+    }
+
+    &__1 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    &__2 {
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    &__3 {
+        display: inline-block;
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+    &__4 {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    &__5 {
+        display: inline-block;
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+    &__6 {
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    &__7 {
+        
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    
+}

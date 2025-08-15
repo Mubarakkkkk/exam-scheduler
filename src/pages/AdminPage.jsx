@@ -136,6 +136,8 @@ export const AdminPage = () => {
                 additional_notes: ''
             }
         )
+
+        alert('Exam scheduled successfully');
     }
 
     // handle conflict
